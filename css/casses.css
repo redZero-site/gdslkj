@@ -1,0 +1,59 @@
+.head_public{
+	background-color: rgba(255,255,255,.95);
+}
+.head_public>.head_zhong>.head_text>.layui-nav{
+	background-color: rgba(255,255,255,.95);
+}
+.scranli{
+	width: 100%;
+}
+.scranli>li{
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #c9c9c9;
+	display: flex;
+	width: 100%;
+	margin-bottom: 50px;
+	transition: all .3s;
+}
+.scranli>li>.bgimg{
+	height: 260px;
+	width: 370px;
+	background-image: url(../img/230718-1594566438ca25.jpg);
+	background-position: center;
+	transition: all .5s;
+	background-size: 130%;
+	opacity: 0.8;
+}
+.scranli>li>.bgimg:hover{
+	background-size: 150%;
+}
+.texts{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 30px;
+	color: #535353;
+	padding: 30px;
+}
+.texts>p{
+	margin-top: 20px;
+	font-size: 18px;
+	color: #505050;
+	line-height: 30px;
+}
+
+@media screen and (max-width:990px) {
+	.scranli>li{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media screen and (max-width:660px) {
+	.scranli>li>.bgimg{
+		height: 210px;
+		width: 330px;
+	}
+}

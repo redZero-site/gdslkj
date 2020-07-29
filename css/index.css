@@ -1,0 +1,271 @@
+.main_content {
+	width: 100vw;
+	height: 46vw;
+	transition: margin-top 0.3s;
+}
+
+#test1>div>div {
+	background-size: 100% auto;
+}
+
+#test1 {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+#test1>div>div:nth-child(1) {
+	background-image: url(../img/banner2.jpg);
+}
+
+#test1>div>div:nth-child(2) {
+	background-image: url(../img/banner1.jpg);
+}
+
+
+#test1>div>div>div {
+	position: absolute;
+	width: 100%;
+	font-size: 54px;
+	color: #4a4a4a;
+	top: calc(50% - 80px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all .3s;
+}
+
+#test1>div>div>div>p {
+	color: #8c8c8c;
+	font-size: 38px;
+	margin: 20px;
+	transition: all .3s;
+}
+
+/* 主内容开始 */
+.the_overall>p {
+	font-size: 36px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+
+.the_overall>p>span {
+	color: #2db5a3;
+}
+
+.qiyexx {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.qiyexx>div {
+	height: 100%;
+	display: flex;
+}
+.qiyexx>div:nth-child(1){
+	flex: 1;
+}
+
+.qiyexx>div>.ul1 {
+	height: 300px;
+	width: 200px;
+	background-color: #F7F7F7;
+}
+
+.qiyexx>div>.ul1>li {
+	position: relative;
+}
+
+.act:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: calc(50% - 10px);
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid rgba(0,0,0,0);
+	border-right: 10px solid #F7F7F7;
+	border-left: 10px solid rgba(0,0,0,0);
+	border-bottom: 10px solid rgba(0,0,0,0);
+}
+
+
+.qiyexx>div>.ul1>li {
+	width: 95%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	color: #666666;
+}
+.qiyexx>div>.ul1>.act{
+	background-color: #1B5FAA;
+	color: #FFFFFF;
+}
+.qiyexx>div:nth-child(1){
+	height: 300px;
+}
+.qiyexx>div:nth-child(2) {
+	background-image: url(../img/small254542c348e0401b7133784724f50cea1591717822.jpg);
+	width: 400px;
+	height: 300px;
+	background-position: center;
+	background-size: auto 100%;
+}
+.qiyexx_nr{
+	height: 200px;
+	flex: 1;
+	position: relative;
+}
+.qiyexx_nr>li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 25px;
+	background-color: #FFFFFF;
+	display: none;
+	flex-direction: column;
+}
+.qiyexx_nr>.neironxs{
+	display: flex;
+}
+.qiyexx_nr>li>h2{
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #3f3f3f;
+}
+.qiyexx_nr>li>h2>span{
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #8A8A8A;
+}
+.qiyexx_nr>li>p{
+	font-size: 14px;
+	margin-bottom: 20px;
+	color: #7F6666;
+}
+
+
+.henxinjs {
+	width: 100%;
+	margin-bottom: 130px;
+}
+.henxinjs>li{
+	height: 420px;
+	width: 23%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 32px 0 32px;
+	border: 1px solid rgba(0,0,0,0.1);
+	transition: all .2s;
+	flex-wrap: wrap;
+	float: left;
+	margin: 20px 12px;
+	transition: all .2s;
+}
+.henxinjs>li:hover{
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+}
+.henxinjs>li>p:nth-child(2){
+	font-size: 18px;
+	color: #939393;
+	line-height: 46px;
+	padding-top: 6px;
+}
+.henxinjs>li>p:nth-child(3){
+	font-size: 16px;
+	color: #ababab;
+	line-height: 26px;
+	overflow: hidden;
+    width: 100%;
+    max-height: 200px;
+}
+.henxinjs>li>a:nth-child(4){
+	font-size: 18px;
+    color: #a1d8cb;
+    line-height: 68px;
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1200px) {
+	.qiyexx>div:nth-child(2){
+		width: 320px;
+		height: 200px;
+	}
+	.qiyexx>div>.ul1 {
+		width: 160px;
+	}
+	.henxinjs>li{
+		margin: 20px 9.5px;
+	}
+}
+@media screen and (max-width:990px) {
+	#test1>div>div>div {
+		font-size: 36px;
+	}
+
+	#test1>div>div>div>p {
+		font-size: 24px;
+	}
+	.qiyexx>div{
+		flex: 1;
+		flex-direction: column;
+	}
+	.qiyexx>div>.ul1{
+		width: 100%;
+	}
+	
+	.henxinjs>li{
+		width: 46%;
+		padding: 30px 32px 0 32px;
+		margin: 20px 15px;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.main_content {
+		margin-top: 80px;
+	}
+	.qiyexx{
+		padding: 0 20px;
+		flex-direction: column;
+		height: 950px;
+	}
+	.qiyexx>div:nth-child(2){
+		width: 100%;
+		background-position: center;
+		overflow: hidden;
+	}
+	.henxinjs{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.henxinjs>li{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width:500px) {
+	#test1>div>div>div {
+		margin-top: 40px;
+		font-size: 18px;
+	}
+	.qiyexx>div:nth-child(2){
+		height: 150px;
+	}
+	#test1>div>div>div>p {
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	.henxinjs>li{
+		width: 90%;
+	}
+}
